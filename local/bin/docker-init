@@ -6,7 +6,7 @@ LC_ALL=C
 
 MACHINE=$(uname -m)
 
-docker-install -r -u -c sudo vim build-essential software-properties-common apt-transport-https wget git dialog bash-completion openssh-client gcc-multilib python
+docker-install -r -u -c su-exec sudo vim build-essential software-properties-common apt-transport-https wget git dialog bash-completion openssh-client gcc-multilib python
 
 if [ "${MACHINE}" != "$(echo ${MACHINE} | sed -e "s/arm//g")" -o "${MACHINE}" = "aarch64" ]; then
 	qemu=
