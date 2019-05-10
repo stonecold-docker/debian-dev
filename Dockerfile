@@ -1,6 +1,4 @@
-ARG DOCKER_ARCH="x64"
-
-FROM forumi0721/debian-${DOCKER_ARCH}-base:latest
+FROM forumi0721/debian-x64-base:latest
 
 LABEL maintainer="forumi0721@gmail.com"
 
