@@ -1,23 +1,16 @@
 # debian-dev
+![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721/debian-dev)
+![Docker Stars](https://img.shields.io/docker/stars/forumi0721/debian-dev)
 
-#### [debian-x64-dev](https://hub.docker.com/r/forumi0721debianx64/debian-x64-dev/)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721debianx64/debian-x64-dev/latest)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721debianx64/debian-x64-dev/latest)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721debianx64/debian-x64-dev/latest)
-![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721debianx64/debian-x64-dev)
-![Docker Stars](https://img.shields.io/docker/stars/forumi0721debianx64/debian-x64-dev)
-#### [debian-aarch64-dev](https://hub.docker.com/r/forumi0721debianaarch64/debian-aarch64-dev/)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721debianaarch64/debian-aarch64-dev/latest)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721debianaarch64/debian-aarch64-dev/latest)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721debianaarch64/debian-aarch64-dev/latest)
-![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721debianaarch64/debian-aarch64-dev)
-![Docker Stars](https://img.shields.io/docker/stars/forumi0721debianaarch64/debian-aarch64-dev)
-#### [debian-armhf-dev](https://hub.docker.com/r/forumi0721debianarmhf/debian-armhf-dev/)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721debianarmhf/debian-armhf-dev/latest)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721debianarmhf/debian-armhf-dev/latest)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721debianarmhf/debian-armhf-dev/latest)
-![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721debianarmhf/debian-armhf-dev)
-![Docker Stars](https://img.shields.io/docker/stars/forumi0721debianarmhf/debian-armhf-dev)
+
+
+----------------------------------------
+### x64
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/debian-dev/latest)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/debian-dev/latest)
+### aarch64
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/debian-dev/aarch64)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/debian-dev/aarch64)
 
 
 
@@ -25,7 +18,7 @@
 #### Description
 
 * Distribution : [Debian GNU/Linux](https://www.debian.org/)
-* Architecture : x64,aarch64,armhf
+* Architecture : x64,aarch64
 * Appplication : -
     - Development environment
 
@@ -39,7 +32,7 @@ docker run -i -t --rm \
            -e RUN_USER_NAME=<user_name> \
            -e RUN_USER_UID=<user_uid> \
            -e RUN_USER_GID=<user_gid> \
-           forumi0721debian[ARCH]/debian-[ARCH]-dev:latest
+           forumi0721/debian-dev:[ARCH_TAG]
 ```
 
 

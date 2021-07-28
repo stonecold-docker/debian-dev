@@ -1,4 +1,4 @@
-ARG BUILD_ARCH=x64
+#ARG BUILD_TAG=latest
 
 FROM forumi0721/debian-x64-base:latest
 

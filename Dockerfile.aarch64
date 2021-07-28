@@ -1,4 +1,4 @@
-ARG BUILD_ARCH=aarch64
+#ARG BUILD_TAG=aarch64
 
 FROM forumi0721/debian-aarch64-base:latest
 
