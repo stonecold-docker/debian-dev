@@ -1,6 +1,6 @@
 #ARG BUILD_TAG=latest
 
-FROM forumi0721/debian-x64-base:latest
+FROM forumi0721/debian-base:latest
 
 LABEL maintainer="forumi0721@gmail.com"
 

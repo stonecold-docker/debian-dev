@@ -1,6 +1,6 @@
 #ARG BUILD_TAG=aarch64
 
-FROM forumi0721/debian-aarch64-base:latest
+FROM forumi0721/debian-base:aarch64
 
 LABEL maintainer="forumi0721@gmail.com"
 
