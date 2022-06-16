@@ -5,16 +5,11 @@ set -e
 LC_ALL=C
 
 echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> Installing required packages"
-PKG_LIB="su-exec sudo vim build-essential software-properties-common apt-transport-https wget git dialog bash-completion openssh-client python3 python2 python3-pip virtualenv"
+PKG_LIB="su-exec sudo vim build-essential software-properties-common apt-transport-https wget git dialog bash-completion openssh-client python3 python3-pip virtualenv"
 if [ "$(uname -m)" = "x86_64" ]; then
 	PKG_LIB="${PKG_LIB} gcc-multilib"
 fi
 docker-install -r -u ${PKG_LIB} ${PKG_DEV}
-echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> OK"
-echo
-
-echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> Installing pip2"
-wget --no-check-certificate -q -O - https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2
 echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> OK"
 echo
 
